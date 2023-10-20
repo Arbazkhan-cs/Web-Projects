@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.container{
+    width: 100%;
+    min-height:100vh;
+    background: linear-gradient(135deg, rgb(0, 89, 255), rgb(215, 56, 136));
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 30rem;
+    margin: 5rem auto 20px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.todo-app h2{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    color: rgb(12, 12, 154);
+    padding-bottom: 1rem;
+}
+.todo-app h2 img{
+    height: 2rem;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(229, 220, 220);
+    border-radius: 2rem;
+}
+#todo-data{
+    background: none;
+    padding: 0.7rem 1rem;
+    width:100%;
+}
+#add-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 5rem;
+    width: 5rem;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+#add-btn:hover{
+    background: rgb(210, 2, 2);
+
+}
+.todo-ul{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 1rem;
+    list-style: none;
+    gap: 0.5rem;
+}
+.todo-li{
+    padding: 0.5rem 3rem;
+    font-size: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 2rem;
+}
+.todo-li::before{
+    content: "";
+    position: absolute;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-image: url("images/circle.png");
+    background-size: cover;
+    background-position: center;
+    left:1.4rem;
+    top:0.7rem;
+}
+.checked{
+    color:rgb(176, 169, 169);
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url("images/check.png");
+}
+.todo-li span{
+    position: absolute;
+    top:0;
+    right:1rem;
+    width: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+.todo-li span:hover{
+    background: rgba(176, 169, 169, 0.564);
+}
+
+@media (max-width: 600px) {
+    .todo-app{
+        max-width:20rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    #add-btn {
+        height: 2.4rem;
+    }
+    
+    .todo-li{
+        font-size: 1.2rem;
+        padding-left: 2rem;
+    }
+    .todo-li::before{
+        height:1.2rem;
+        width:1.2rem;
+        left: 0.4rem;
+        top:0.65rem;
+    }
+    .todo-ul{
+        margin: 1rem 0;
+    }
+    .todo-li span{
+        right:0;
+    }
+}

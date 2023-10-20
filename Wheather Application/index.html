@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Wheather Application</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wav-1"></div>
+        <div class="wav-2"></div>
+        <div class="wav-3"></div>
+
+        <div class="wheather-icon"><img src="images/sun.png" alt="sunny" id="weather"></div>
+
+        <div class="country">
+            <div class="country-icon"><img src="images/street.png" alt="icon"></div>
+            <div class="country-name">{%state%}, {%country%}</div>
+        </div>
+
+        <div class="current-time">
+            <div class="time">MON | OCT 23 | 12:35 am</div>
+        </div>
+
+        <div class="temp">
+            <div class="real-temp">{%Temp%}&deg; C</div>
+            <div class="min-max">
+                <div class="min-max-temp">Min: {%min%}&deg; C | Max: {%max%}&deg; C</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="server.js"></script>
+    <script src="scripting.js"></script>
+</body>
+</html>

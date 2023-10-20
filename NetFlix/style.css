@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    font-family: "Netflix sans light";    
+    box-sizing: border-box;
+}
+
+html{
+    font-size:67.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #000;
+    color: white;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.931) 0, rgba(0, 0, 0, 0.604) 60%, rgba(0, 0, 0, 0.638) 100%),url("images/netflix_image.png");
+    background-size: cover;
+}
+
+header{
+    position: relative;
+    padding: 0 12%;
+    z-index: 100;
+}
+
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img{
+    width: 15rem;
+    height: 8rem;
+    cursor: pointer;
+}
+
+.lang{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.655);
+}
+#select-img{
+    position: absolute;
+    height: 1.6rem;
+    left: 1rem;
+}
+#drop-down{
+    position: absolute;
+    height: 1rem;
+    right: 1rem;
+}
+#select-lang{
+    border: 0.5px solid rgb(127, 126, 126);
+    width: 12rem;
+    height: 3rem;
+    z-index: 100;
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    appearance: none;
+}
+#select-lang option{
+    color: black;
+    background: #fff;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sign-up{
+    font-family: "Netflix sans";
+    font-size: 1.3rem;
+    padding: 3% 8%;
+    font-weight: bolder;
+    background: #ea0510;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.sign-up a{
+    color: white;
+}
+.sign-up:hover{
+    background-color: #b31018;
+}
+
+
+.header-content{
+    margin-top: 15rem;
+    text-align: center;
+}
+.header-content h1{
+    color: white;
+    font-size: 4.7rem;
+    font-family: "Netflix sans";
+}
+.header-content p{
+    position: relative;
+    margin-top: 2rem;
+    color: white;
+    font-size: 2.4rem;
+}
+
+
+.email{
+    margin-top: 2rem;
+    position: relative;
+}
+#head-email{
+    font-size: 2rem;
+    border: 1px solid rgb(126, 122, 122);
+    background: rgba(65, 64, 64, 0.327);
+    color: white;
+    border-radius: 5px;
+    padding: 14px;
+    width: 40vw;
+}
+
+.email .btn{
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    background: #ea0510;
+    padding: 10px 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    left:1rem;
+}
+.email .btn:hover{
+    background: #c40b15;
+}
+
+
+.main{
+    padding: 1rem 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.main-content{
+    margin: 15rem 0;
+    font-size: 2.5rem;
+}
+.main-content h1{
+    font-family: "Netflix sans";
+}
+.main-content p{
+    margin-top: 2rem;
+}
+.main-video{
+    position: relative;
+}
+
+.main-video img{
+    position: relative;
+    width: 45rem;
+    z-index: 100;
+}
+.main-video video{
+    position: absolute;
+    right: 16%;
+    width: 69%;
+    top: 22%;
+  }
+
+hr{
+    height: 1rem;
+    background: #323030;
+}
+
+.offline-img img{
+    width: 40rem;
+}
+.video2 video{
+    top: 15%;
+    width: 55%;
+    right: 23%;
+}
+
+.FAQ{
+    color: white;
+    padding: 2rem 12%;
+}
+.FAQ h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.Questions div{
+    position: relative;
+}
+
+.Questions div button{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+    padding: 2% 2%;
+    background: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    margin-top: 1%;
+}
+.Questions div button:hover{
+    background: #1f1e1e;
+}
+.Questions div p{
+    margin-top:1px;
+    background: #2d2d2d;
+    font-size: 2.5rem;
+    padding: 2% 2%;
+    display: none;
+}
+.Questions div img{
+    position: absolute;
+    height: 5rem;
+    top: 15%;
+    left:93%;
+}
+
+.register{
+    padding: 2rem 12%;
+}
+.register p, .register .email{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#head-email2{
+    font-size: 2rem;
+    border: 1px solid rgb(126, 122, 122);
+    background: rgba(65, 64, 64, 0.327);
+    color: white;
+    border-radius: 5px;
+    padding: 14px;
+    width: 40vw;
+}
+
+@media screen and (max-width: 1280px){
+    header{
+        padding: 0 5%;
+    }
+    .main{
+        padding: 0 2rem;
+    }
+    .Questions div img{
+        left: 90%;
+    }
+    .FAQ{
+        padding: 0 5%;
+    }
+    .header{
+        height: 55rem;
+    }
+    .header-content{
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 960px){
+    header{
+        padding: 0 10%;
+    }
+    .header-content{
+        padding: 0 3rem;
+    }
+    .header-content h1{
+        font-size: 3.5rem;
+    }
+    .header-content p{
+        font-size: 2rem;
+    }
+    .main{
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-content{
+        margin: 5% 0;
+    }
+    .main-content p{
+        font-size: 2rem;
+    }
+    #head-email{
+        font-size: 1.5rem;
+    }
+    .email .btn{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .header{
+        padding-top: 1rem;
+    }
+    .nav-logo img{
+        width: 10rem;
+        height: 5rem;
+    }
+    .main-nav{
+        gap:1rem;
+    }
+    .main{
+        margin-top: 2rem;
+    }
+    #select-lang{
+        content: none;
+        width: 5rem;
+    }
+    #select-img{
+        height:1.4rem;
+    }
+    #drop-down{
+        height: 1rem;
+    }
+    .sign-up{
+        vertical-align: center;
+        padding: 0.5rem 1rem 0.5rem;
+    }
+
+    .main-content h1{
+        font-size: 2.5rem;
+    }
+    .main-content p{
+        font-size: 1.5rem;
+    }
+    .main-video img{
+        width: 30rem;
+    }
+    .FAQ h1{
+        font-size: 3rem;
+    }
+    .Questions div button{
+        font-size: 2rem;
+        margin-top: 1rem;
+        padding: 2rem 1rem;
+    } 
+    .Questions div p{
+        font-size: 2rem;
+        margin-top: 1rem;
+        padding: 2rem 1rem;
+    } 
+    .Questions div img{
+        height: 3rem;
+        top: 30%;
+        left: 88%;
+    } 
+    #head-email2{
+        width: 30rem;
+        margin-bottom: 2rem;
+    }
+
+    .header{
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header-content{
+        margin-top: 5rem;
+    }
+    .email .btn{
+        left:0;
+    }
+    #head-email{
+        display: block;
+        width: 27rem;
+        margin-bottom: 2rem;
+    }
+    .header-content h1{
+        font-size: 2.5rem;
+    }
+    .header-content p{
+        font-size: 2rem;
+    }
+    .Questions div button,.Questions div p{
+        font-size: 1.5rem;
+    }
+    #head-email2{
+        width: 25rem;
+        font-size: 1.5rem;
+    }
+    .offline-img img{
+        width: 25rem;
+    }
+    .FAQ{
+        margin-top: 4rem; 
+    }
+}

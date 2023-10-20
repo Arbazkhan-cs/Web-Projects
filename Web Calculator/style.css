@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("/bg.jpg");
+}
+
+/* Heading... */
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: -100px;
+    margin-top: 5%;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+/* Calcultor Outer Part */
+.container{
+    margin: 120px auto;
+    width: 270px;
+    padding: 20px 25px;
+    border-radius: 3%;
+    /* background-color: silver; */
+    box-shadow: 0px 0px 20px black;
+}
+
+
+/* Result of the calculator */
+.result{
+    box-shadow: 1px 1px 5px black;
+    padding: 0.2rem;
+    margin-bottom: 10%;
+    border: 2px solid white;
+}
+#show{
+    border: none;
+    text-align: right;
+    font-size: 19px;
+    padding: 0 5px;
+}
+
+
+/* Buttons [9-0] */
+.btn{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 5%;
+}
+.btnNum{
+    box-shadow: 1px 1px 5px black;
+    padding: 3px;
+    margin: 5px;
+    font-size: 27px;
+    cursor: pointer;
+    border-radius: 100%;
+    /* border: none; */
+}
+
+
+/* Operators [+, -, /, *, =] */
+.operations{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 24%;
+}
+.operator{
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+.equal{
+    width: 220px ;
+    font-size: 20px;
+    margin: 0px;
+    border-radius: 0;
+}
+
+.operator:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.btnNum:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.btnNum:nth-child(13){
+    text-align: center;
+    font-size: 20px;
+}

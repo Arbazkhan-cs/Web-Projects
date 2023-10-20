@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Script for using the math.evaluate() Function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+
+    <title>&#128425; Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator By Romi Gupta</h1>
+
+    <!-- Calculator... -->
+    <div class="container" id="calcu">
+
+        <!-- Here The Result Display -->
+        <div class="result">
+            <input type="tel" placeholder="0" id="show">
+        </div>
+
+        <!-- These Are The Buttons-->
+        <div class="buttons">
+
+            <!-- Buttons [9-0] and [C, DEL] -->
+            <div class="btn">
+                <button class="btnNum" onclick="disp('7')">7</button>
+                <button class="btnNum" onclick="disp('8')">8</button>
+                <button class="btnNum" onclick="disp('9')">9</button>
+                <button class="operator" onclick="disp('+')">+</button>
+                <button class="btnNum" onclick="disp('4')">4</button>
+                <button class="btnNum" onclick="disp('5')">5</button>
+                <button class="btnNum" onclick="disp('6')">6</button>
+                <button class="operator" onclick="disp('-')">-</button>
+                <button class="btnNum" onclick="disp('1')">1</button>
+                <button class="btnNum" onclick="disp('2')">2</button>
+                <button class="btnNum" onclick="disp('3')">3</button>
+                <button class="operator" onclick="disp('*')">&cross;</button>
+                <button class="btnNum" onclick="del()">DEL</button>
+                <button class="btnNum" onclick="disp('0')">0</button>
+                <button class="btnNum" onclick="clr()">C</button>
+                <button class="operator" onclick="disp('/')">&divide;</button>
+            </div>
+
+            <!-- Operators [+, -, /, *, =] -->
+            <div class="operations">
+                <button class="equal operator" onclick="solve()">=</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JS File -->
+    <script src="scripting.js"></script>
+</body>
+</html>
